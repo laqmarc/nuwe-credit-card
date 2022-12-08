@@ -10,8 +10,6 @@ function handleSubmit(event) {
   const data = new FormData(event.target);
   const values = Object.fromEntries(data.entries());
 
-  // console.table({ values });
-
 /* Adding the values of the form to the results div. */
  document.getElementById('results').innerHTML += 
  '<div class="allok">ALL OK</div>' + 
@@ -44,9 +42,9 @@ $(":input").inputmask();
  */
 function formatString(e) {
   
-  var inputChar = String.fromCharCode(e.keyCode);
-  var code = e.keyCode;
-  var allowedKeys = [8];
+  let inputChar = String.fromCharCode(e.keyCode);
+  let code = e.keyCode;
+  let allowedKeys = [8];
   if (allowedKeys.indexOf(code) !== -1) {
     return;
   }

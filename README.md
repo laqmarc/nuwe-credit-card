@@ -81,7 +81,7 @@ $ http://127.0.0.1:5500/
 This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
 
 
-Made with :heart: by <a href="https://github.com/laqmarc" target="_blank">{{YOUR_NAME}}</a>
+Made with :heart: by <a href="https://github.com/laqmarc" target="_blank">laqmarc</a>
 
 &#xa0;
 

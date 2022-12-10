@@ -39,15 +39,15 @@
                         <input id="cardnumber" name="cardnumber" type="text"
                             data-inputmask="'mask': '9999 9999 9999 9999'" inputmode="numeric" autocomplete="cc-number"
                             maxlength="19" minlength="13" placeholder="1234 1234 1234 1234" required>
-                        <img class="cardicon" src="./img/card.svg" alt="credit card icon">
+                            <img class="cardicon" src="./img/card.svg" alt="credit card icon">
                     </div>
 
                     <div class="half">
 
                         <div class="item-half">
                             <label for="expirationdate">Expiration</label>
-                            <input id="expirationdate" name="expirationdate" type="text" onkeyup="formatString(event);"
-                                pattern="([0-9]{2}[/]?){2}" inputmode="numeric" placeholder="MM/YY" maxlength="5"
+                            <input id="expirationdate" name="expirationdate" type="text" onkeyup="formatString(event);" onchange="compareDate();"
+                                pattern="([0-9]{2}[/]?)[0-9]{2}" inputmode="numeric" placeholder="MM/YY" maxlength="5"
                                 required>
                         </div>
 

@@ -9,6 +9,8 @@ function handleSubmit(event) {
   const data = new FormData(event.target);
   const values = Object.fromEntries(data.entries());
 
+  
+
   /* Adding the values of the form to the results div. */
   document.getElementById('results').innerHTML +=
     '<div class="allok">ALL OK</div>' +
@@ -21,6 +23,8 @@ function handleSubmit(event) {
 
   /* Showing the results div. */
   results.style.display = 'block';
+  /* Disable the button */
+  document.getElementById('validateButton').disabled = "true";
 }
 
 /* Listening for the submit event on the form. */

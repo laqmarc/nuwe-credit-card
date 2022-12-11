@@ -153,3 +153,7 @@ a {
     text-decoration: none;
     float: right;
 }
+
+img.info {
+    bottom: 14px;
+}

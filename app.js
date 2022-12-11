@@ -40,7 +40,6 @@ $(":input").inputmask();
  */
 function formatString(e) {
 
-  let inputChar = String.fromCharCode(e.keyCode);
   let code = e.keyCode;
   let allowedKeys = [8];
   if (allowedKeys.indexOf(code) !== -1) {
@@ -65,10 +64,10 @@ function formatString(e) {
  */
 function compareDate() {
 
-  var today = new Date();
-  var mm = String(today.getMonth() + 1).padStart(2, '0');
-  var yy = today.getFullYear().toString().slice(-2);
-  today = mm + '/' + yy;
+  let today = new Date();
+  let mm = String(today.getMonth() + 1).padStart(2, '0');
+  let yy = today.getFullYear().toString().slice(-2);
+  // today = mm + '/' + yy;
 
   let month = document.getElementById('expirationdate').value.toString().substring(0, 2);
   let year = document.getElementById('expirationdate').value.toString().slice(-2);

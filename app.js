@@ -67,8 +67,6 @@ function compareDate() {
   let today = new Date();
   let mm = String(today.getMonth() + 1).padStart(2, '0');
   let yy = today.getFullYear().toString().slice(-2);
-  // today = mm + '/' + yy;
-
   let month = document.getElementById('expirationdate').value.toString().substring(0, 2);
   let year = document.getElementById('expirationdate').value.toString().slice(-2);
 
